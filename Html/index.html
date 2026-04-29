@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplos con Fetch</title>
+    <link rel="stylesheet" href="../Css/index.css">
+</head>
+
+<body>
+    <h1>AquaSkin</h1>
+    <p class="sub">Tu tienda de cuidado facial</p>
+
+    <div class="layout">
+
+        <!-- FOTO IZQUIERDA -->
+        <div class="side left">
+            <img src="../img/Edu_Mii.png" alt="Yo">
+        </div>
+
+        <!-- CONTENIDO PRINCIPAL -->
+    <div class="container">
+        <div class="box">
+            <h3>Ingrese el ID de un productto para conocer su precio (Colsultar los ID: 10, 20 o 30)</h3>
+            <input type="text" id="idI"> <button onclick="get()">Buscar</button>
+            <p id="r1"></p>
+        </div>
+
+        <div class="box">
+            <h3>Ingrese un valor para calcular su descuento</h3>
+            <input type="number" id="mI" placeholder="Monto">
+            <select id="tI"><option value="general">General</option><option value="estudiante">Estudiante</option></select>
+            <button onclick="post()">Calcular</button>
+            <p id="r2"></p>
+        </div>
+
+        <div class="box">
+            <h3>Buscar producto por nombre</h3>
+            <input type="text" id="nombreI" placeholder="Ej: serum">
+            <button onclick="buscarNombre()">Buscar</button>
+            <p id="r3"></p>
+        </div>
+
+        <div class="box">
+            <h3>Calcular impuesto (7%)</h3>
+            <input type="number" id="impI" placeholder="Monto">
+            <button onclick="impuesto()">Calcular</button>
+            <p id="r4"></p>
+        </div>
+    </div>
+
+        <!-- FOTO DERECHA -->
+        <div class="side right">
+            <img src="../img/Nicky_Mii.png" alt="Amiga">
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="../JavaScript/index.js"></script>
+</body>
+</html>
